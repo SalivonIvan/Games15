@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -7,8 +9,158 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.games15.controller.StartWindowController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.games15.controller.StartWindowController">
     <stylesheets>
-        <URL value="@../css/games15.css"/>
+        <URL value="@../css/games15.css" />
     </stylesheets>
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="324.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="40.0" layoutY="31.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="100.0" layoutY="31.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="220.0" layoutY="31.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="160.0" layoutY="31.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="3">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="220.0" layoutY="91.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="8">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="100.0" layoutY="91.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="6">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="160.0" layoutY="91.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="7">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="40.0" layoutY="91.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="5">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="220.0" layoutY="151.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="12">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="160.0" layoutY="151.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="11">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="40.0" layoutY="151.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="9">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="100.0" layoutY="151.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="10">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="40.0" layoutY="211.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="13">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="100.0" layoutY="211.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="14">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="160.0" layoutY="211.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="15">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <MenuBar prefHeight="27.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <right>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="25.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <Label text="Timer">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="10.0" text="Total">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </right>
+         <left>
+            <VBox prefHeight="361.0" prefWidth="97.0" BorderPane.alignment="CENTER" />
+         </left>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="User:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="43.0" text="UserNAme">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
 </AnchorPane>
