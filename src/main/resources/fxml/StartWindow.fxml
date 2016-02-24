@@ -9,14 +9,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.games15.controller.StartWindowController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.games15.controller.StartWindowController">
     <stylesheets>
         <URL value="@../css/games15.css" />
     </stylesheets>
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
-            <Pane prefHeight="324.0" prefWidth="368.0" BorderPane.alignment="CENTER">
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="273.0" prefWidth="327.0" BorderPane.alignment="CENTER">
                <children>
                   <Button layoutX="40.0" layoutY="31.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="1">
                      <font>
@@ -88,7 +88,7 @@
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button layoutX="160.0" layoutY="211.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="15">
+                  <Button fx:id="button15" layoutX="160.0" layoutY="211.0" mnemonicParsing="false" onAction="#button15" prefHeight="60.0" prefWidth="60.0" text="15">
                      <font>
                         <Font size="24.0" />
                      </font>

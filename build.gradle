@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.javafxports:jfxmobile-plugin:1.0.6'
+        classpath 'org.javafxports:jfxmobile-plugin:1.0.7'
     }
 }
 
@@ -18,7 +18,7 @@ mainClassName = 'com.games15.MainGames15'
 jfxmobile {
     android {
         manifest = 'src/android/AndroidManifest.xml'
-        androidSdk = 'D:/salivon/instal/Android SDK'
+        androidSdk = 'E:/Instal/Android SDK'
     }
     ios {
         infoPList = file('src/ios/Default-Info.plist')
