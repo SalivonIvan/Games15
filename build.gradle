@@ -18,7 +18,7 @@ mainClassName = 'com.games15.MainGames15'
 jfxmobile {
     android {
         manifest = 'src/android/AndroidManifest.xml'
-        androidSdk = 'E:/Instal/Android SDK'
+        androidSdk = 'D:/Developer/AndroidSdk'
     }
     ios {
         infoPList = file('src/ios/Default-Info.plist')
